@@ -10,7 +10,7 @@ const useFetchSales = () => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`${process.env.API_URL}/api/sales`);
+        const response = await fetch(`https://oac-api.onrender.com/api/sales`);
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }

@@ -42,7 +42,7 @@ const AddNewSaleForm = () => {
   const onSubmit = async (data: OACSales) => {
     try {
       setLoading(true);
-      const response = await fetch(`${process.env.API_URL}/api/sales/`, {
+      const response = await fetch(`https://oac-api.onrender.com/api/sales/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
